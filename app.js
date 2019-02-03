@@ -29,22 +29,22 @@ const Counter = (props) => (
 );
 
 // App Component
-const App = () => (
+const App = (props) => (
   <div className="scoreboard">
-    <Header title="Game Scoreboard" totalPlayers={ 1 } />
+    <Header title="Game Scoreboard" totalPlayers={ props.initialPlayers.length } />
 
     {/* Players List */}
-    <Player name="Guil" score={1} />
-    <Player name="Ashley" score={2} />
-    <Player name="Eddy" score={3} />
-    <Player name="Jessica" score={5} />
+    { props.initialPlayers.map( player =>
+      <Player
+        name={player.name}
+        score={player.score}
+      />
+    )}
   </div>
 )
 
 // Render React Components to DOM
 ReactDOM.render(
-  <App/>,
+  <App initialPlayers={players}/>,
   document.getElementById('root')
 );
-
-console.log(Header);
