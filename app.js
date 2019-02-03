@@ -1,11 +1,10 @@
-const title = <h1>React Element Title!</h1>;
-
-const desc = <p>Creating React node and rendering it into DOM</p>;
+const title = 'React Element Title!';
+const desc = 'Creating React node and rendering it into DOM';
 
 const header = (
   <header>
-    <h1>React Element Title!</h1>
-    <p>Creating React node and rendering it into DOM</p>
+    <h1>{ title }</h1>
+    <p>{ desc }</p> 
   </header>
 );
 
