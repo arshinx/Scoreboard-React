@@ -27,9 +27,19 @@ const Counter = () => (
   </div>
 );
 
+// App Component
+const App = () => (
+  <div className="scoreboard">
+    <Header />
+
+    {/* Players List */}
+    <Player />
+  </div>
+)
+
 // Render React Components to DOM
 ReactDOM.render(
-  <Player/>,
+  <App/>,
   document.getElementById('root')
 );
 
