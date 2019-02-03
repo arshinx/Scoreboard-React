@@ -85,6 +85,14 @@ class App extends React.Component {
     ]
   }
 
+  handleRemovePlayer = (id) => {
+    this.setState( prevState => {
+      return {
+        player: prevState.players.filter( p => p.id != id )
+      };
+    });
+  }
+
   render() {
     return (
       <div className="scoreboard">
