@@ -8,6 +8,7 @@ const header = (
   <header>
     <h1 id={myTitleID}>{ name }'s First Element</h1>
     <p>{ desc }</p>
+    <input value={10 * 20} />
   </header>
 );
 
