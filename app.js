@@ -66,9 +66,25 @@ class App extends React.Component {
 
   state = {
     players: [
-      
+      {
+        id: 1,
+        name: "Guil"
+      },
+      {
+        id: 2,
+        name: "Ashley"
+      },
+      {
+        id: 3,
+        name: "Eddy"
+      },
+      {
+        id: 4,
+        name: "Jessica"
+      }
     ]
   }
+
   render() {
     return (
       <div className="scoreboard">
