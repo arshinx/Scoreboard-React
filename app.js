@@ -104,6 +104,6 @@ class App extends React.Component {
 
 // Render React Components to DOM
 ReactDOM.render(
-  <App initialPlayers={players}/>,
+  <App />,
   document.getElementById('root')
 );
