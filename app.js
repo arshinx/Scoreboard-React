@@ -1,3 +1,4 @@
+
 // Header Component
 const Header = (props) => {
   return (
@@ -34,7 +35,9 @@ const App = () => (
 
     {/* Players List */}
     <Player name="Guil" score={1} />
-    <Player name="Eddy" score={0} />
+    <Player name="Ashley" score={2} />
+    <Player name="Eddy" score={3} />
+    <Player name="Jessica" score={5} />
   </div>
 )
 
