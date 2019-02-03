@@ -1,14 +1,6 @@
-const title = React.createElement(
-  'h1',
-  { id: 'main-title', title: 'Welcome to Scoreboard App' },
-  'First React Element!'
-);
+const title = <h1>React Element Title!</h1>;
 
-const desc = React.createElement(
-  'p',
-  null,
-  'Creating React node and rendering it into DOM'
-);
+const desc = <p>Creating React node and rendering it into DOM</p>
 
 const header = React.createElement(
   'header',
