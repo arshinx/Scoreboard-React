@@ -1,3 +1,4 @@
+// Header Component
 const Header = () => {
   return (
     <header>
@@ -7,22 +8,28 @@ const Header = () => {
   );
 }
 
+// Player Component
 const Player = () => (
   <div className="player">
     <span className="player-name">
       Guil
     </span>
-
-    <div className="counter">
-      <button className="counter-action decrement"> - </button>
-      <span className="counter-score">35</span>
-      <button className="counter-action increment"> + </button>
-    </div>
+    <Counter/>
   </div>
 );
 
+// Counter Component
+const Counter = () => (
+  <div className="counter">
+    <button className="counter-action decrement"> - </button>
+    <span className="counter-score">35</span>
+    <button className="counter-action increment"> + </button>
+  </div>
+);
+
+// Render React Components to DOM
 ReactDOM.render(
-  <Player />,
+  <Player/>,
   document.getElementById('root')
 );
 
