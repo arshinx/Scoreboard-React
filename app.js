@@ -1,12 +1,12 @@
 const title = <h1>React Element Title!</h1>;
 
-const desc = <p>Creating React node and rendering it into DOM</p>
+const desc = <p>Creating React node and rendering it into DOM</p>;
 
-const header = React.createElement(
-  'header',
-  null,
-  title,
-  desc
+const header = (
+  <header>
+    <h1>React Element Title!</h1>
+    <p>Creating React node and rendering it into DOM</p>
+  </header>
 );
 
 ReactDOM.render(
