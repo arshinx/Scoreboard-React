@@ -14,15 +14,15 @@ const Player = (props) => (
     <span className="player-name">
       {props.name}
     </span>
-    <Counter/>
+    <Counter score={props.score}/>
   </div>
 );
 
 // Counter Component
-const Counter = () => (
+const Counter = (props) => (
   <div className="counter">
     <button className="counter-action decrement"> - </button>
-    <span className="counter-score">35</span>
+    <span className="counter-score">{props.score}</span>
     <button className="counter-action increment"> + </button>
   </div>
 );
@@ -30,11 +30,11 @@ const Counter = () => (
 // App Component
 const App = () => (
   <div className="scoreboard">
-    <Header title="Game Scoreboard" totalPlayers={2} />
+    <Header title="Game Scoreboard" totalPlayers={ 1 } />
 
     {/* Players List */}
-    <Player name="Guil" />
-    <Player name="Eddy" />
+    <Player name="Guil" score={1} />
+    <Player name="Eddy" score={0} />
   </div>
 )
 
