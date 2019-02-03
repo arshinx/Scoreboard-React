@@ -1,18 +1,18 @@
 // Header Component
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
-      <h1>Scoreboard</h1>
-      <span className="stats"> Players: 1</span>
+      <h1>{props.title}</h1>
+      <span className="stats"> Players: {props.totalPlayers}</span>
     </header>
   );
 }
 
 // Player Component
-const Player = () => (
+const Player = (props) => (
   <div className="player">
     <span className="player-name">
-      Guil
+      {props.name}
     </span>
     <Counter/>
   </div>
@@ -30,10 +30,11 @@ const Counter = () => (
 // App Component
 const App = () => (
   <div className="scoreboard">
-    <Header />
+    <Header title="Game Scoreboard" totalPlayers={2} />
 
     {/* Players List */}
-    <Player />
+    <Player name="Guil" />
+    <Player name="Eddy" />
   </div>
 )
 
