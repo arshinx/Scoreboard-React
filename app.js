@@ -85,6 +85,7 @@ class App extends React.Component {
     ]
   }
 
+  // Remove Player
   handleRemovePlayer = (id) => {
     this.setState( prevState => {
       return {
@@ -102,7 +103,9 @@ class App extends React.Component {
         { this.state.players.map( player =>
           <Player
             name={player.name}
+            id = {player.id}
             key = {player.id.toString()}
+            removePlayer={this.handleRemovePlayer}
           />
         )}
       </div>
