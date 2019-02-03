@@ -7,7 +7,18 @@ function Header = () -> {
   );
 }
 
+const Player = () => (
+  <div className="player">
+    <span className="player-name">
+      Guil
+    </span>
 
+    <div className="counter">
+      <button> - </button>
+      <button> + </button>
+    </div>
+  </div>
+);
 
 ReactDOM.render(
   <Header/>,
